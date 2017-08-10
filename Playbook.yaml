@@ -5,4 +5,4 @@
       src: /var/lib/jenkins/workspace/busybox/busybox.yaml
       dest: /busybox.yaml
   - name: Make busybox pod
-    command: kubectl create -f /busybox.yml
+    command: kubectl create -f /busybox.yaml
