@@ -2,7 +2,7 @@
   tasks:
   - name: copy podfile
     copy:
-      src: /var/lib/jenkins/workspace/busybox/busybox.yml
-      dest: /busybox.yml
+      src: /var/lib/jenkins/workspace/busybox/busybox.yaml
+      dest: /busybox.yaml
   - name: Make busybox pod
     command: kubectl create -f /busybox.yml
