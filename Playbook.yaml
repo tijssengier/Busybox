@@ -1,0 +1,7 @@
+- hosts: masters
+  tasks:
+  - copy:
+    src: /var/lib/jenkins/workspace/busybox/busybox.yml
+    dest: /busybox.yml
+  - name: Make busybox pod
+    command: kubectl create -f /busybox.yml
